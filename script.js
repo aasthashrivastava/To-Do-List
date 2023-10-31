@@ -10,16 +10,17 @@ function createTodoList() {
 
     newTodoList.innerHTML = `
                 <div class="todo-container" data-id="${id}">
+                
                 <h1>To Do List ${id}</h1>
                 <button class='allButton'>All</button>
-                <button class='pendingButton'>Pending</button>
+                <button class='pendingButton'>Active</button>
                 <button class='completeButton'>Completed</button>
                 <input type="text" id="taskInput" placeholder="Add your task...">
                 <button class="add-task" id="addTask">Add Task</button>
                 <ul id="todoList">
                 </ul>
                 <p>Completed Tasks: <span id="completedCount">0</span></p>
-                <p>Pending Tasks: <span id="pendingCount">0</span></p>
+                <p>Active Tasks: <span id="pendingCount">0</span></p>
                 <p>All Tasks: <span id="allCount">0</span></p>
                 </div>
             `
